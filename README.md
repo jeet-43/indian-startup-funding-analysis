@@ -75,14 +75,7 @@ The dashboard has four pages, each built around one part of the business problem
 - Data cleaning in Python and pandas, notebook verified to run end to end with zero errors
 - SQL business question analysis, all 14 queries verified against the cleaned database
 - Four page Power BI dashboard, one page per business question plus an overview
-
-## How to Reproduce
-
-1. Clone this repo.
-2. Open `Startup_Funding_Cleaning_Beginner.ipynb` and run all cells. This regenerates `clean_startup_funding.csv`.
-3. Load `clean_startup_funding.csv` into `startup_funding.db`, SQLite, or your own database.
-4. Run `startup_funding_sql_queries.sql`.
-5. Open `dashboard.pbix` in Power BI Desktop.
+- In Progress
 
 ## Known Limitations
 
