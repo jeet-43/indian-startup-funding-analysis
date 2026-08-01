@@ -28,7 +28,8 @@ Full context and success criteria are in `Business_Problem_Document.pdf`.
 | `clean_startup_funding.csv` | Cleaned output of the notebook, ready for SQL and BI |
 | `startup_funding.db` | SQLite database loaded from the cleaned CSV |
 | `startup_funding_sql_queries.sql` | Business question SQL, basic through advanced window functions, including the query behind each dashboard page |
-| `startup_funding_dashboard.pbix` | Four page Power BI dashboard, one page per business question plus an overview |
+| `dashboard.pbix` | Four page Power BI dashboard, one page per business question plus an overview |
+| `dashboard_screenshots/` | PNG screenshots of all four dashboard pages, for anyone browsing without Power BI Desktop |
 | `LICENSE` | MIT license |
 
 ## Data Cleaning Highlights
@@ -43,15 +44,23 @@ The notebook was verified to run end to end with `jupyter nbconvert --execute` a
 
 ## Dashboard
 
-The dashboard has four pages, each built around one part of the business problem.
+The dashboard has four pages, each built around one part of the business problem. Screenshots below, full interactive file is `dashboard.pbix`.
 
 **Page 1, Overview.** Four KPI cards (Total Funding, Deal Count, Avg Deal Size, Disclosed Deal Percent) plus a short framing of the business problem, so a viewer is oriented before looking at any chart.
 
+![Dashboard overview page with KPI cards](dashboard_screenshots/1.png)
+
 **Page 2, Sector Momentum.** A line chart of total funding by year for the six major sectors, answering question one. Sector funding leadership shifts every year rather than one category dominating. E-commerce peaked in 2017 at nearly 6 billion dollars, the single highest point on the chart, while Transportation stayed flat for years before spiking alone to about 4 billion dollars in 2019. That isolated, single year spike, with no momentum before or after, is a mega round effect rather than sustained sector growth, unlike the steadier multi year climb seen in Consumer Internet through 2016 and 2017.
+
+![Sector momentum line chart by year](dashboard_screenshots/2.png)
 
 **Page 3, Broad Activity vs. Concentrated Bets.** A scatter plot of deal count against total funding per sector, answering question two. E-commerce is the true funding leader overall, with nearly 8 billion dollars raised through a moderate 299 deals. Consumer Internet is the most accessible market by far, spreading about 6.25 billion dollars across roughly 942 deals at a fraction of the average check size, around 664 thousand dollars per deal. Transportation sits at the opposite extreme, with about 4 billion dollars concentrated into just 8 deals at an average of roughly 509 million dollars each, a market controlled by a handful of gatekeepers rather than one with room for many new entrants. Technology and HealthTech sit in the middle on both dimensions.
 
+![Broad activity versus concentrated bets scatter plot](dashboard_screenshots/3.png)
+
 **Page 4, City Opportunity Map.** A matrix of deal count by city and sector across the top eight cities, answering question three. Bengaluru dominates overall activity, with 588 of 1,703 deals across these eight cities, driven mainly by Consumer Internet and Technology. Sector concentration reveals a sharper gap, though. All six Transportation deals in this dataset sit in just Bengaluru and Gurugram, while Mumbai and New Delhi, despite ranking second and third in total deal volume with 358 and 258 deals, show zero Transportation funding. For a VC targeting Transportation, this signals either genuine whitespace in India's other major hubs, or that Transportation capital simply has not reached them yet, a gap worth investigating before assuming national saturation.
+
+![City by sector opportunity map matrix](dashboard_screenshots/4.png)
 
 ## Key Insights
 
@@ -73,7 +82,7 @@ The dashboard has four pages, each built around one part of the business problem
 2. Open `Startup_Funding_Cleaning_Beginner.ipynb` and run all cells. This regenerates `clean_startup_funding.csv`.
 3. Load `clean_startup_funding.csv` into `startup_funding.db`, SQLite, or your own database.
 4. Run `startup_funding_sql_queries.sql`.
-5. Open `startup_funding_dashboard.pbix` in Power BI Desktop.
+5. Open `dashboard.pbix` in Power BI Desktop.
 
 ## Known Limitations
 
