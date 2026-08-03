@@ -77,7 +77,7 @@ One detail worth calling out. Merging the SoftBank name variants revealed a true
 
 All six core questions, plus several extra analytical queries, were answered in MySQL using aggregations, window functions such as RANK and LAG, and ranked common table expressions for median calculations.
 
-Queries are in `sql/startup_funding_analysis.sql`. Each query alongside its output is documented in `sql/SQL_QUERIES.pdf`.
+Queries are in `sql/startup_funding_analysis.sql`. Each query alongside its output is documented in `sql/sql_queries.pdf`.
 
 Extra queries beyond the six core questions:
 
@@ -118,7 +118,7 @@ Top investors by deal count and by total amount invested, plus the full investor
 
 ## Insights
 
-The full write up, with charts and commentary for each of the six questions, is in `insights/Indian_Startup_Funding_Analysis.pdf`.
+The full write up, with charts and commentary for each of the six questions, is in `insights/indian_startup_funding_analysis.pdf`.
 
 Headline numbers:
 
