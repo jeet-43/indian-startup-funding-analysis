@@ -50,7 +50,7 @@ README.md
 
 ## Datasets
 
-Raw data: [Indian Startup Funding](https://www.kaggle.com/datasets/sudalairajkumar/indian-startup-funding/suggestions), 3,044 startup funding records from 2015 to 2020, exported in its original form with the usual problems that come with real world data.
+Raw data: [Indian Startup Funding](https://www.kaggle.com/datasets/sudalairajkumar/indian-startup-funding/suggestions) ,  3,044 startup funding records from 2015 to 2020, exported in its original form with the usual problems that come with real world data.
 
 Cleaned data: `cleaned_startup_funding.csv`, the same 3,044 records after cleaning, ready for SQL and Power BI.
 
