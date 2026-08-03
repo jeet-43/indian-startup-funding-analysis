@@ -15,7 +15,7 @@ Six questions guided the analysis:
 5. Who are the top investors, by number of deals and by total amount invested?
 6. What is the average and median deal size, and how does it vary by industry or stage?
 
-The full problem statement is in [`problem_statement/Problem_Statement.pdf`](./problem_statement/Problem_Statement.pdf).
+The full problem statement is in [`problem_statement/problem_statement.pdf`](./problem_statement/problem_statement.pdf).
 
 ## Project Structure
 
